@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Namco - Rocky Hill Reviews</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<!-- bar graph -->
+		<script>
+			window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer1",
+    {
+        animationEnabled: true,
+        title: {
+            text: "Spline Area Chart"
+        },
+        axisX: {
+            interval: 10,
+        },
+        data: [
+        {
+            type: "splineArea",
+            color: "rgba(255,12,32,.3)",
+            type: "splineArea",
+            dataPoints: [
+                { x: new Date(1992, 0), y: 2506000 },
+                { x: new Date(1993, 0), y: 2798000 },
+                { x: new Date(1994, 0), y: 3386000 },
+                { x: new Date(1995, 0), y: 6944000 },
+                { x: new Date(1996, 0), y: 6026000 },
+                { x: new Date(1997, 0), y: 2394000 },
+                { x: new Date(1998, 0), y: 1872000 },
+                { x: new Date(1999, 0), y: 2140000 },
+                { x: new Date(2000, 0), y: 7289000 },
+                { x: new Date(2001, 0), y: 4830000 },
+                { x: new Date(2002, 0), y: 2009000 },
+                { x: new Date(2003, 0), y: 2840000 },
+                { x: new Date(2004, 0), y: 2396000 },
+                { x: new Date(2005, 0), y: 1613000 },
+                { x: new Date(2006, 0), y: 2821000 }
+            ]
+        },
+        ]
+    });
+chart.render();
+
+var chart = new CanvasJS.Chart("chartContainer2",
+    {
+        animationEnabled: true,
+        title: {
+            text: "Pie Chart",
+        },
+        data: [
+        {
+            type: "pie",
+            showInLegend: true,
+            dataPoints: [
+                { y: 4181563, legendText: "PS 3", indexLabel: "PlayStation 3" },
+                { y: 2175498, legendText: "Wii", indexLabel: "Wii" },
+                { y: 3125844, legendText: "360", indexLabel: "Xbox 360" },
+                { y: 1176121, legendText: "DS", indexLabel: "Nintendo DS" },
+                { y: 1727161, legendText: "PSP", indexLabel: "PSP" },
+                { y: 4303364, legendText: "3DS", indexLabel: "Nintendo 3DS" },
+                { y: 1717786, legendText: "Vita", indexLabel: "PS Vita" }
+            ]
+        },
+        ]
+    });
+chart.render();
+
+var chart = new CanvasJS.Chart("chartContainer3",
+    {
+        animationEnabled: true,
+        title: {
+            text: "Line Chart"
+        },
+        axisX: {
+            valueFormatString: "MMM",
+            interval: 1,
+            intervalType: "month"
+        },
+        axisY: {
+            includeZero: false
+        },
+        data: [
+        {
+          type: "line",
+          dataPoints: [
+              { x: new Date(2012, 00, 1), y: 450 },
+              { x: new Date(2012, 01, 1), y: 414 },
+              { x: new Date(2012, 02, 1), y: 520, indexLabel: "highest", markerColor: "red", markerType: "triangle" },
+              { x: new Date(2012, 03, 1), y: 460 },
+              { x: new Date(2012, 04, 1), y: 450 },
+              { x: new Date(2012, 05, 1), y: 500 },
+              { x: new Date(2012, 06, 1), y: 480 },
+              { x: new Date(2012, 07, 1), y: 480 },
+              { x: new Date(2012, 08, 1), y: 410, indexLabel: "lowest", markerColor: "DarkSlateGrey", markerType: "cross" },
+              { x: new Date(2012, 09, 1), y: 500 },
+              { x: new Date(2012, 10, 1), y: 480 },
+              { x: new Date(2012, 11, 1), y: 510 }
+            ]
+        }
+        ]
+    });
+chart.render();
+
+var chart = new CanvasJS.Chart("chartContainer4",
+    {
+        animationEnabled: true,
+        title: {
+            text: "Column Chart"
+        },
+        axisX: {
+            interval: 10,
+        },
+
+        data: [
+        {
+            type: "column",
+            legendMarkerType: "triangle",
+            legendMarkerColor: "green",
+            color: "rgba(255,12,32,.3)",
+            showInLegend: true,
+            legendText: "Country wise population",
+            dataPoints: [
+                { x: 10, y: 297571, label: "India" },
+                { x: 20, y: 267017, label: "Saudi" },
+                { x: 30, y: 175200, label: "Canada" },
+                { x: 40, y: 154580, label: "Iran" },
+                { x: 50, y: 116000, label: "Russia" },
+                { x: 60, y: 97800, label: "UAE" },
+                { x: 70, y: 20682, label: "US" },
+                { x: 80, y: 20350, label: "China" }
+            ]
+        },
+        ]
+    });
+chart.render();
+
+	}
+		</script>
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/Namco_Logo_CMYK.png" alt="" /></span>
+						<h1>Rocky Hill</h1>
+						<p>Review Stats for the Rocky Hill store </p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Overview</a></li>
+							<li><a href="#strengths">Strengths</a></li>
+							<li><a href="#recommendations">Recommendations</a></li>
+							<li><a href="#profiles">Customer Profiles</a></li>
+							<li><a href="#trends"> Trends</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+						
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Overview of the stats</h2>
+										</header>
+										<ul class="actions">
+											
+										<!-- bar graph -->
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<div id="chartContainer1" style="width: 45%; height: 300px;display: inline-block;"></div><br> 
+<div id="chartContainer2" style="width: 45%; height: 300px;display: inline-block;"></div><br>
+<div id="chartContainer3" style="width: 45%; height: 300px;display: inline-block;"></div><br>
+<div id="chartContainer4" style="width: 45%; height: 300px;display: inline-block;"></div><br>
+										</ul>
+
+									</div>
+
+								</div>
+							</section>
+						
+	
+						
+						<!-- First Section -->
+						
+							<section id="strengths" class="main special">
+								<header class="major">
+									<h2>Strengths</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon major style1 fa-code"></span>
+										<h3>First Good thing</h3>
+										<p>Stats</p>
+									</li>
+									<li>
+										<span class="icon major style3 fa-copy"></span>
+										<h3>Second Good thing</h3>
+										<p>Stats</p>
+									</li>
+									<li>
+										<span class="icon major style5 fa-diamond"></span>
+										<h3>Third Good Thing</h3>
+										<p>Stats</p>
+									</li>
+								</ul>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button">Link</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Second Section -->
+						
+							<section id="recommendations" class="main special">
+								<header class="major">
+									<h2>What to work on</h2>
+									<p>This section will have what customers didn't like and how we can improve it. It'll feature data about negative reviews, keywords, and patterns. </p>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon fa-code-fork"></span>
+										<strong>5,120</strong> Data
+									</li>
+									<li class="style2">
+										<span class="icon fa-folder-open-o"></span>
+										<strong>8,192</strong> Data
+									</li>
+									<li class="style3">
+										<span class="icon fa-signal"></span>
+										<strong>2,048</strong> Data
+									</li>
+									<li class="style4">
+										<span class="icon fa-laptop"></span>
+										<strong>4,096</strong> Data
+									</li>
+									<li class="style5">
+										<span class="icon fa-diamond"></span>
+										<strong>1,024</strong> Data
+									</li>
+								</ul>
+								<p class="content">We can use this section to specify exactly what we need to do, like a procedure.</p>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Get Started -->
+						
+							<section id="profiles" class="main special">
+								<header class="major">
+									<h2>Customer Profiles</h2>
+									<p>Have customer profiles here that we haven't responded to - good and bad.</p>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button primary">Get Started</a></li>
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+						
+						<!-- Trends -->
+						
+							<section id="trends" class="main special">
+								<header class="major">
+									<h2>General Trends</h2>
+									<p>General trends of good and bad traits and what they mean for the store</p>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button primary">Get Started</a></li>
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Info</h2>
+							<p>Maybe some company info</p>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Purpose of this site</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+
+						</section>
+						<p class="copyright">&copy; Namco Pools LLC. Design: Ahmed Ali</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Namco - Westbrook Reviews</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<!-- bar graph -->
+		<script>
+			window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer1",
+    {
+animationEnabled: true,
+        title: {
+            text: "Store Recommendations",
+        },
+        data: [
+        {
+            type: "pie",
+            showInLegend: true,
+            dataPoints: [
+                { y: 3, legendText: "Poor Customer Service", indexLabel: "No Help" },
+                { y: 1, legendText: "Hard to find products and/or messy store", indexLabel: "Messy" },
+                { y: 2, legendText: "The staff was very cold and didn't know anything", indexLabel: "Unprofessional" },
+            ]
+        },
+        ]
+    });
+chart.render();
+
+var chart = new CanvasJS.Chart("chartContainer2",
+    {
+        animationEnabled: true,
+        title: {
+            text: "Store Strengths",
+        },
+        data: [
+        {
+            type: "pie",
+            showInLegend: true,
+            dataPoints: [
+                { y: 2, legendText: "Helpful Customer Service", indexLabel: "Help" },
+                { y: 1, legendText: "Had products available and well-presented", indexLabel: "Availability" },
+                { y: 3, legendText: "The staff was very friendly and knowledgable", indexLabel: "Professional" },
+            ]
+        },
+        ]
+    });
+chart.render();
+
+var chart = new CanvasJS.Chart("chartContainer3",
+    {
+        animationEnabled: true,
+        title: {
+            text: "Last 7 Google Reviews"
+        },
+        axisX: {
+            valueFormatString: "MMM",
+            interval: 1,
+            intervalType: "month"
+        },
+        axisY: {
+            includeZero: false
+        },
+        data: [
+        {
+          type: "line",
+          dataPoints: [
+              { x: new Date(2018, 05, 12), y: 4 },
+              { x: new Date(2018, 06, 08), y: 3 },
+              { x: new Date(2018, 06, 24), y: 2 },
+              { x: new Date(2018, 08, 11), y: 1 },
+              { x: new Date(2018, 09, 02), y: 5 },
+              { x: new Date(2018, 09, 23), y: 2 },
+              { x: new Date(2019, 01, 22), y: 5 }
+            ]
+        }
+        ]
+    });
+chart.render();
+
+var chart = new CanvasJS.Chart("chartContainer4",
+    {
+        animationEnabled: true,
+        title: {
+            text: "Total Number of Google Reviews"
+        },
+        axisX: {
+            interval: 10,
+        },
+
+
+        data: [
+        {
+            type: "column",
+            color: "rgba(85,208,211,.3)",
+            dataPoints: [
+                { x: 10, y: 1, label: "1 Star" },
+                { x: 20, y: 3, label: "2 Star" },
+                { x: 30, y: 2, label: "3 Star" },
+                { x: 40, y: 1, label: "4 Star" },
+                { x: 50, y: 3, label: "5 Star" },
+            ]
+        },
+        ]
+    });
+chart.render();
+
+	}
+		</script>
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/Namco_Logo_CMYK.png" alt="" /></span>
+						<h1>Westbrook</h1>
+						<p>Google Review Stats for Namco in Westbrook</p>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#total" class="active">Total Scores</a></li>
+							<li><a href="#trend">Score Trend</a></li>
+							<li><a href="#strengths">Strengths</a></li>
+							<li><a href="#recommendations">Recommendations</a></li>
+							<li><a href="#raw"> Raw Data</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Overview -->
+						
+							<section id="total" class="main">
+								<div class="spotlight">
+									<div align="center" class="content">
+										<header class="major">
+											<h2>Overview</h2>
+
+										</header>
+											<div id="chartContainer4" style="width: 45%; height: 300px;display: inline-block;"></div><br>
+
+									</div>
+
+								</div>
+							</section>
+						
+	
+						
+						<!-- Trends -->
+						
+							<section id="trend" class="main special">
+								<header class="major">
+									<h2>Trends</h2>
+								</header>
+
+								<ul class="features">
+									<div id="chartContainer3" style="width: 45%; height: 300px;display: inline-block;"></div><br>
+									</ul>
+							</section>
+
+						<!-- Strengths -->
+							<div align="center">
+							<section align="center" id="strengths" class="main special">
+								<header class="major">
+									<h2>Strengths</h2>
+								</header>
+
+
+								<div align="left" id="chartContainer2" style="width: 45%; height: 300px;display: inline-block;"></div>
+	
+								<footer class="major">
+
+								</footer>
+							</section>
+							</div>
+						<!-- Recommendations -->
+						
+							<section id="recommendations" class="main special">
+								<header class="major">
+									<h2>Recommendations</h2>
+
+								</header>
+								<footer class="major">
+								<div id="chartContainer1" style="width: 45%; height: 300px;display: inline-block;"></div><br> 
+
+								</footer>
+							</section>
+						
+						<!-- Raw Reviews -->
+						
+							<section id="raw" class="main special">
+								<header class="major">
+									<h2>Raw Review Data</h2>
+									<p>You can see all the reviews for the store by pressing the button.</p>
+									<div class="container">
+										<div class="col-md-6">
+											<p><input type="text" id="placeid" class="form-control" placeholder="Place ID" value="ChIJa2TFVkWaskwRaxm6rR9GpP8"/></p>
+											<p><button class="go btn btn-block btn-primary">Get Reviews</button></p>
+											<div class="results"></div>
+										</div>
+		
+										<div class="col-md-6">
+										<p>Click the button to get more Google reviews.</p>
+
+										</div>
+									</div>
+
+								</header>
+								<footer class="major">
+
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+
+						<p align="center" class="copyright">&copy; Namco Pools LLC.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+				integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+				crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+				integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+				crossorigin="anonymous"></script>
+			<script src="assets/js/reviews.js"></script>
+
+	</body>
+</html>
